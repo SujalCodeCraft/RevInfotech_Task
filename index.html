@@ -56,11 +56,110 @@
                         </ul>
                     </div>
                     <div class="nav__signUp">
-                        <button>Resgister </button>
-                        <button>Login </button>
-                        <button class="offcanvas_icons__"><i
-                                class="bi bi-list"></i></button>
+                        <button>Register</button>
+                        <button>Login</button>
+                        <div class="offcanvas_icons__">
+                            <i class="bi bi-list" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasLeft"></i>
+                        </div>
                     </div>
+
+                    <!-- Offcanvas Left -->
+                    <div class="offcanvas offcanvas-start offcanvas___"
+                        tabindex="-1" id="offcanvasLeft"
+                        aria-labelledby="offcanvasLeftLabel">
+                        <div class="offcanvas-header__">
+                            <div class="offcanvas__logo">
+                                <h5 id="offcanvasLeftLabel">
+                                    <img src="assets/img/logo1.png" alt="Logo">
+                                </h5>
+                                <button type="button"
+                                    class="btn-close text-reset"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas__login__">
+                                <button>Register</button>
+                                <button>Login</button>
+                            </div>
+                        </div>
+
+                        <div class="offcanvas-body">
+                            <ul>
+                                <li class="bg__dark">Find a room</li>
+                                <li>Find a flatmate</li>
+                                <li>Find a flatmate</li>
+
+                                <!-- Help Centre Accordion (Always Open) -->
+                                <li>
+                                    <div class="accordion"
+                                        id="helpCentreAccordion">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header"
+                                                id="helpCentreHeading">
+                                                <button class="accordion-button"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#helpCentreCollapse"
+                                                    aria-expanded="true">
+                                                    Help Centre
+                                                </button>
+                                            </h2>
+                                            <div id="helpCentreCollapse"
+                                                class="accordion-collapse collapse show"
+                                                data-bs-parent="#helpCentreAccordion">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Landlord FAQs</li>
+                                                        <li>Tenant FAQs</li>
+                                                        <li>Blog</li>
+                                                        <li>About Us</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Manage Rentals Accordion -->
+                                <li>
+                                    <div class="accordion"
+                                        id="manageRentalsAccordion">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header"
+                                                id="manageRentalsHeading">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#manageRentalsCollapse">
+                                                    Manage Rentals
+                                                </button>
+                                            </h2>
+                                            <div id="manageRentalsCollapse"
+                                                class="accordion-collapse collapse"
+                                                data-bs-parent="#manageRentalsAccordion">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>List A Room</li>
+                                                        <li>My Listings</li>
+                                                        <li>My Messages</li>
+                                                        <li>Ad Performance</li>
+                                                        <li>Transfer
+                                                            Listing</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="offcanvas_main_btn">
+                                Advertise
+                            </button>
+                        </div>
+                    </div>
+
                 </nav>
             </header>
             <!-- header end  -->
@@ -91,10 +190,14 @@
                                 <div class="row">
                                     <div class="col-md-10">
                                         <div class="hero_serchbar">
-                                            <input type="text"
-                                                placeholder="Enter Keyword ">
-                                            <button>Search </button>
 
+                                            <div class="input___">
+                                                <input type="text"
+                                                    placeholder="Enter Keyword">
+                                            </div>
+                                            <div class="search___">
+                                                <button>Search </button>
+                                            </div>
                                         </div>
                                         <button
                                             class="mobileView_search_btn">
@@ -265,7 +368,7 @@
 
                         <div class="spare_room_card">
                             <div class="spare_card_img">
-                                <img src="assets/img/spare-room-1.png"
+                                <img src="assets/img/spare-room-2.png"
                                     alt="spare Room img">
                                 <div class="offers___">
                                     <div class="leftside__">
@@ -295,7 +398,7 @@
 
                         <div class="spare_room_card">
                             <div class="spare_card_img">
-                                <img src="assets/img/spare-room-1.png"
+                                <img src="assets/img/spare-room-3.png"
                                     alt="spare Room img">
                                 <div class="offers___">
                                     <div class="leftside__">
@@ -328,6 +431,723 @@
                 </div>
             </section>
 
+            <section class="spare_room_mobile">
+                <div>
+                    <h3 class="text-start py-4">
+                        Latest spare rooms For Rent in the UK’s most popular
+                        cities
+                    </h3>
+                </div>
+
+                <div class="owl-carousel spare_room_carousel">
+                    <div class="item">
+                        <div class="inner-carousel owl-carousel">
+                            <div class="inner-item">
+                                <div class="inner_bg">
+                                    <img src="assets/img/spare-room-1.png" alt>
+                                </div>
+                                <div class="inner_txt">
+                                    <div class="inner_item_head">
+                                        <p>Available from : 01 Jan’25</p>
+                                        <p>Ensuite : Yes/No</p>
+                                    </div>
+                                    <div class="inner_item_bootom">
+
+                                        <div class="sliding_iconss">
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-left"></i>
+                                            </div>
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </div>
+
+                                        <p>£395 /month</p>
+                                        <p>1 Bed Flat, Wapping, E1W 2RG</p>
+
+                                        <div class="item_bottom_icons">
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                        </div>
+
+                                        <div class="inner_sliding_dots">
+                                            <div
+                                                class="inner_dot active "></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-item">
+                                <div class="inner_bg">
+                                    <img src="assets/img/spare-room-1.png" alt
+                                        class="img-fluid">
+                                </div>
+                                <div class="inner_txt">
+                                    <div class="inner_item_head">
+                                        <p>Available from : 01 Jan’25</p>
+                                        <p>Ensuite : Yes/No</p>
+                                    </div>
+                                    <div class="inner_item_bootom">
+
+                                        <div class="sliding_iconss">
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-left"></i>
+                                            </div>
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </div>
+
+                                        <p>£395 /month</p>
+                                        <p>1 Bed Flat, Wapping, E1W 2RG</p>
+
+                                        <div class="item_bottom_icons">
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                        </div>
+
+                                        <div class="inner_sliding_dots">
+                                            <div
+                                                class="inner_dot active "></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-item">
+                                <div class="inner_bg">
+                                    <img src="assets/img/spare-room-1.png" alt>
+                                </div>
+                                <div class="inner_txt">
+                                    <div class="inner_item_head">
+                                        <p>Available from : 01 Jan’25</p>
+                                        <p>Ensuite : Yes/No</p>
+                                    </div>
+                                    <div class="inner_item_bootom">
+
+                                        <div class="sliding_iconss">
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-left"></i>
+                                            </div>
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </div>
+
+                                        <p>£395 /month</p>
+                                        <p>1 Bed Flat, Wapping, E1W 2RG</p>
+
+                                        <div class="item_bottom_icons">
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                        </div>
+
+                                        <div class="inner_sliding_dots">
+                                            <div
+                                                class="inner_dot active "></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner-carousel owl-carousel">
+                            <div class="inner-item">
+                                <div class="inner_bg">
+                                    <img src="assets/img/spare-room-1.png" alt>
+                                </div>
+                                <div class="inner_txt">
+                                    <div class="inner_item_head">
+                                        <p>Available from : 01 Jan’25</p>
+                                        <p>Ensuite : Yes/No</p>
+                                    </div>
+                                    <div class="inner_item_bootom">
+
+                                        <div class="sliding_iconss">
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-left"></i>
+                                            </div>
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </div>
+
+                                        <p>£395 /month</p>
+                                        <p>1 Bed Flat, Wapping, E1W 2RG</p>
+
+                                        <div class="item_bottom_icons">
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                        </div>
+
+                                        <div class="inner_sliding_dots">
+                                            <div
+                                                class="inner_dot active "></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-item">
+                                <div class="inner_bg">
+                                    <img src="assets/img/spare-room-1.png" alt>
+                                </div>
+                                <div class="inner_txt">
+                                    <div class="inner_item_head">
+                                        <p>Available from : 01 Jan’25</p>
+                                        <p>Ensuite : Yes/No</p>
+                                    </div>
+                                    <div class="inner_item_bootom">
+
+                                        <div class="sliding_iconss">
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-left"></i>
+                                            </div>
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </div>
+
+                                        <p>£395 /month</p>
+                                        <p>1 Bed Flat, Wapping, E1W 2RG</p>
+
+                                        <div class="item_bottom_icons">
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                        </div>
+
+                                        <div class="inner_sliding_dots">
+                                            <div
+                                                class="inner_dot active "></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-item">
+                                <div class="inner_bg">
+                                    <img src="assets/img/spare-room-1.png" alt>
+                                </div>
+                                <div class="inner_txt">
+                                    <div class="inner_item_head">
+                                        <p>Available from : 01 Jan’25</p>
+                                        <p>Ensuite : Yes/No</p>
+                                    </div>
+                                    <div class="inner_item_bootom">
+
+                                        <div class="sliding_iconss">
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-left"></i>
+                                            </div>
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </div>
+
+                                        <p>£395 /month</p>
+                                        <p>1 Bed Flat, Wapping, E1W 2RG</p>
+
+                                        <div class="item_bottom_icons">
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                        </div>
+
+                                        <div class="inner_sliding_dots">
+                                            <div
+                                                class="inner_dot active "></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner-carousel owl-carousel">
+                            <div class="inner-item">
+                                <div class="inner_bg">
+                                    <img src="assets/img/spare-room-1.png" alt>
+                                </div>
+                                <div class="inner_txt">
+                                    <div class="inner_item_head">
+                                        <p>Available from : 01 Jan’25</p>
+                                        <p>Ensuite : Yes/No</p>
+                                    </div>
+                                    <div class="inner_item_bootom">
+
+                                        <div class="sliding_iconss">
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-left"></i>
+                                            </div>
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </div>
+
+                                        <p>£395 /month</p>
+                                        <p>1 Bed Flat, Wapping, E1W 2RG</p>
+
+                                        <div class="item_bottom_icons">
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                        </div>
+
+                                        <div class="inner_sliding_dots">
+                                            <div
+                                                class="inner_dot active "></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-item">
+                                <div class="inner_bg">
+                                    <img src="assets/img/spare-room-1.png" alt>
+                                </div>
+                                <div class="inner_txt">
+                                    <div class="inner_item_head">
+                                        <p>Available from : 01 Jan’25</p>
+                                        <p>Ensuite : Yes/No</p>
+                                    </div>
+                                    <div class="inner_item_bootom">
+
+                                        <div class="sliding_iconss">
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-left"></i>
+                                            </div>
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </div>
+
+                                        <p>£395 /month</p>
+                                        <p>1 Bed Flat, Wapping, E1W 2RG</p>
+
+                                        <div class="item_bottom_icons">
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                        </div>
+
+                                        <div class="inner_sliding_dots">
+                                            <div
+                                                class="inner_dot active "></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-item">
+                                <div class="inner_bg">
+                                    <img src="assets/img/spare-room-1.png" alt>
+                                </div>
+                                <div class="inner_txt">
+                                    <div class="inner_item_head">
+                                        <p>Available from : 01 Jan’25</p>
+                                        <p>Ensuite : Yes/No</p>
+                                    </div>
+                                    <div class="inner_item_bootom">
+
+                                        <div class="sliding_iconss">
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-left"></i>
+                                            </div>
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </div>
+
+                                        <p>£395 /month</p>
+                                        <p>1 Bed Flat, Wapping, E1W 2RG</p>
+
+                                        <div class="item_bottom_icons">
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                        </div>
+
+                                        <div class="inner_sliding_dots">
+                                            <div
+                                                class="inner_dot active "></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner-carousel owl-carousel">
+                            <div class="inner-item">
+                                <div class="inner_bg">
+                                    <img src="assets/img/spare-room-1.png" alt>
+                                </div>
+                                <div class="inner_txt">
+                                    <div class="inner_item_head">
+                                        <p>Available from : 01 Jan’25</p>
+                                        <p>Ensuite : Yes/No</p>
+                                    </div>
+                                    <div class="inner_item_bootom">
+
+                                        <div class="sliding_iconss">
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-left"></i>
+                                            </div>
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </div>
+
+                                        <p>£395 /month</p>
+                                        <p>1 Bed Flat, Wapping, E1W 2RG</p>
+
+                                        <div class="item_bottom_icons">
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                        </div>
+
+                                        <div class="inner_sliding_dots">
+                                            <div
+                                                class="inner_dot active "></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-item">
+                                <div class="inner_bg">
+                                    <img src="assets/img/spare-room-1.png" alt>
+                                </div>
+                                <div class="inner_txt">
+                                    <div class="inner_item_head">
+                                        <p>Available from : 01 Jan’25</p>
+                                        <p>Ensuite : Yes/No</p>
+                                    </div>
+                                    <div class="inner_item_bootom">
+
+                                        <div class="sliding_iconss">
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-left"></i>
+                                            </div>
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </div>
+
+                                        <p>£395 /month</p>
+                                        <p>1 Bed Flat, Wapping, E1W 2RG</p>
+
+                                        <div class="item_bottom_icons">
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                        </div>
+
+                                        <div class="inner_sliding_dots">
+                                            <div
+                                                class="inner_dot active "></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-item">
+                                <div class="inner_bg">
+                                    <img src="assets/img/spare-room-1.png" alt>
+                                </div>
+                                <div class="inner_txt">
+                                    <div class="inner_item_head">
+                                        <p>Available from : 01 Jan’25</p>
+                                        <p>Ensuite : Yes/No</p>
+                                    </div>
+                                    <div class="inner_item_bootom">
+
+                                        <div class="sliding_iconss">
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-left"></i>
+                                            </div>
+                                            <div class="sliding_icons">
+                                                <i
+                                                    class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </div>
+
+                                        <p>£395 /month</p>
+                                        <p>1 Bed Flat, Wapping, E1W 2RG</p>
+
+                                        <div class="item_bottom_icons">
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                            <p>
+                                                <span><img
+                                                        src="assets/img/BedImg.png"
+                                                        alt></span>
+                                                1
+                                            </p>
+                                        </div>
+
+                                        <div class="inner_sliding_dots">
+                                            <div
+                                                class="inner_dot active "></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                            <div class="inner_dot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- outer slider dots  -->
+                <div class="outer_slider_dots">
+                    <div class="outer_dot active"></div>
+                    <div class="outer_dot"></div>
+                    <div class="outer_dot"></div>
+                    <div class="outer_dot"></div>
+                </div>
+
+                <div class="pt-4">
+                    <button>Search Available Rooms</button>
+                </div>
+            </section>
             <!-- cost saving bg Img  Section  -->
             <section class="cost_saving__">
                 <div class="container">
@@ -355,8 +1175,8 @@
 
             <!-- Blogs Cards  -->
             <section class="blogs_section__">
-                <div class="container">
-                    <div class="row">
+                <div class="container p-0 m-0">
+                    <div class="row mx-0 gx-0">
                         <div class="col-md-6 p-0">
                             <div class="blog_card___">
                                 <div class="row">
@@ -405,9 +1225,9 @@
                                     <div
                                         class="col-md-5 order-1 order-md-2 ">
                                         <div class="blog_rightside">
-                                            <img src="assets/img/blog_1.png"
+                                            <img src="assets/img/blog_3.png"
                                                 alt="Blog img">
-                                            <img src="assets/img/blog_2.png"
+                                            <img src="assets/img/blog_4.png"
                                                 alt="Blog img">
                                         </div>
                                     </div>
@@ -416,10 +1236,11 @@
                                     <div
                                         class="col-md-7 order-2 order-md-1 ">
                                         <div class="blog_leftside__">
-                                            <h4>Find your next Flatmate</h4>
-                                            <p>Finding the right group of people
-                                                to house share isn’t always
-                                                straightforward.
+                                            <h4>List your room for rent</h4>
+                                            <p>Ready to get started and find a
+                                                new tenant, list your room for
+                                                rent
+                                                quickly and
                                                 <span>
                                                     At room for rent, we make it
                                                     simple for you to find your
@@ -428,12 +1249,10 @@
                                                     interests, lifestyles, and
                                                     preferences.
                                                 </span></p>
-                                            <button>Find a house share</button>
-                                            <p>At room for rent, we make it
-                                                simple for you to find your next
-                                                housemates based on shared
-                                                interests, lifestyles, and
-                                                preferences.</p>
+                                            <button>list a room</button>
+                                            <p>easily on one of the UK’s most
+                                                trusted room rental
+                                                platforms.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -690,6 +1509,28 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- need help -->
+            <div class="need_help___">
+                <button>Need Help ? </button>
+
+                <div class="need_help_msg">
+                    <div class="help__icon">
+                        <img src="assets/img/message.png" alt="message ">
+                    </div>
+                    <div class="help__txt">
+                        <p>NEED HELP?</p>
+                        <p>Browse our FAQ’s
+                            Email Us: email@roomforrent.rent
+                            Visit Contact Us Page</p>
+                    </div>
+
+                    <div class="cross___">
+                        <i class="bi bi-x"></i>
+
                     </div>
                 </div>
             </div>
