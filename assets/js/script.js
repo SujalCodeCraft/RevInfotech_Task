@@ -42,10 +42,10 @@ $(document).ready(function () {
 
   outerOwl.owlCarousel({
     loop: true,
-    margin: 20,
+    margin: 10,
     nav: false,
     dots: false, // Default dots disable, custom dots use karenge
-    autoplay: true,
+    // autoplay: true,
     autoplayTimeout: 3000,
     responsive: {
       0: { items: 2.2 },
@@ -81,7 +81,7 @@ $(document).ready(function () {
       center: true,
       nav: false, // Inner slider ke liye navigation off
       dots: false, // Custom dots use karenge
-      autoplay: true,
+      // autoplay: true,
       autoplayTimeout: 2000,
     });
 
