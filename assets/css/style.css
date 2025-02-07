@@ -42,6 +42,15 @@ body {
   gap: 1rem;
   padding-left: 7rem;
 }
+.header__ .nav__ .nav_items__ > ul .dropdown-menu {
+  margin-top: 1.3rem !important;
+  background-color: #06038d;
+  color: #f8f9fa;
+}
+.header__ .nav__ .nav_items__ > ul .dropdown-menu a:hover {
+  background-color: #ee2a7b;
+  color: #f8f9fa;
+}
 .header__ .nav__ .nav_items__ button {
   background-color: rgb(0, 182, 21);
   color: rgb(255, 255, 255);
@@ -639,9 +648,42 @@ body {
   font-size: 14px;
 }
 
-.need_help_msg {
+.need_help__main {
   position: fixed;
+  right: 2rem;
+  bottom: 3rem;
+}
+.need_help__main .need_help___ {
+  z-index: 9;
+  text-align: end;
+}
+.need_help__main .need_help___ button {
+  background-color: #ee2a7b;
+  color: #f8f9fa;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+.need_help__main .need_help_msg {
+  position: relative;
+  background-color: #06038d;
+  color: #f8f9fa;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: none;
+}
+.need_help__main .need_help_msg .cross___ {
+  position: absolute;
   right: 0;
+  top: -1rem;
+  height: 15px;
+  width: 15px;
+  background-color: #ee2a7b;
+  color: #ee2a7b;
+  z-index: 99;
+}
+.need_help__main .need_help_msg p {
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 576px) {
@@ -1686,9 +1728,6 @@ body {
     margin-bottom: 1rem;
     font-weight: 300;
   }
-  .media__desktop {
-    display: none;
-  }
   .footer__ .footer_main__ {
     padding: 1rem 0;
   }
@@ -2030,6 +2069,12 @@ body {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 1200px) {
+  .need_help__main .need_help___ button {
+    position: relative;
+    bottom: 2rem;
+    right: -1.5rem;
+    font-size: 10px;
+  }
   .spare_room__ {
     display: none;
   }
@@ -2037,7 +2082,7 @@ body {
     display: block;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 3000px) {
+@media only screen and (min-width: 1400px) and (max-width: 3000px) {
   .spare_room__ {
     display: block;
   }
@@ -2080,19 +2125,19 @@ body {
     font-size: 1.5rem;
   }
   .header__ button {
-    min-width: 100px;
-    font-size: 15px;
+    min-width: 130px;
+    font-size: 16px;
     height: -moz-fit-content;
     height: fit-content;
   }
   .header__ .nav__ .nav_items__ > ul {
-    padding-left: 3rem;
+    padding-left: 7rem;
   }
   .hero__ {
     padding: 1.3rem 0.5rem;
   }
   .hero__ .hero__main h2 {
-    font-size: 3.8rem;
+    font-size: 3.9rem;
     line-height: normal;
   }
   .hero__ .hero__main .hero_selection {
@@ -2141,6 +2186,8 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    margin: 0 auto;
+    max-width: 85%;
     margin-bottom: 0.8rem;
   }
   .uk_room_rental__ .uk_rental_cards {
@@ -2211,7 +2258,7 @@ body {
   }
   .blogs_section__ .blog_card___ button {
     width: 100%;
-    font-size: 14px;
+    font-size: 17px;
   }
   .blogs_section__ .blog_card___ .blog_rightside > :first-child {
     width: 100%;
@@ -2223,10 +2270,10 @@ body {
   }
   .blogs_section__ .blog_card___ .blog_leftside__ h4 {
     padding-right: 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .blogs_section__ .blog_card___ .blog_leftside__ > :nth-child(4) {
-    font-size: 14px;
+    font-size: 17px;
   }
   .blogs_section__ .blog_card___ .blog_leftside__ > :nth-child(2) {
     max-width: 100%;
@@ -2245,22 +2292,22 @@ body {
     background-position: center;
   }
   .cost_saving__ .cost-saving-details h4 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     line-height: normal;
   }
   .cost_saving__ .cost-saving-details p {
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 0.5rem;
-    font-size: 15px;
-    max-width: 100%;
+    font-size: 17px;
+    max-width: 89%;
   }
   .copyright_ {
     padding: 0.5rem;
   }
   .copyright_ p {
-    font-size: 12px;
+    font-size: 15px;
     padding: 0;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     text-align: center;
     font-weight: 300;
   }
@@ -2269,9 +2316,6 @@ body {
     font-size: 13px;
     margin-bottom: 1rem;
     font-weight: 300;
-  }
-  .media__desktop {
-    display: none;
   }
   .footer__ .footer_main__ {
     padding: 1rem 0;
@@ -2283,19 +2327,19 @@ body {
     padding: 1rem 0.2rem;
   }
   .footer__ .footer_main__ .footer_sub .accordian__ul li {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 0;
   }
   .footer__ .footer_main__ .footer_sub ul {
-    font-size: 14px;
+    font-size: 16px;
   }
   .footer__ .footer_main__ .footer_sub ul li {
     margin-bottom: 0.4rem;
-    font-size: 12px;
+    font-size: 16px;
   }
   .footer__ .footer_main__ .footer_sub p {
     max-width: 100%;
-    font-size: 11px;
+    font-size: 18px;
   }
   .social_media__ {
     padding: 1rem 0;
@@ -2307,25 +2351,25 @@ body {
     margin: 0;
   }
   .footer__ .footer_main__ h4 {
-    font-size: 16px;
+    font-size: 19px;
   }
   .footer__ .footer_main__ .footer_sub .accordian__header {
-    font-size: 14px;
+    font-size: 16px;
   }
   .newslatter__ label {
-    font-size: 12px;
+    font-size: 16px;
   }
   .footer__ .footer_main__ .footer_sub .newslatter__ input {
     padding: 0.4rem 0.8rem;
   }
   .footer__ .footer_main__ .footer_sub .newslatter__ input::-moz-placeholder {
-    font-size: 13px;
+    font-size: 15px;
   }
   .footer__ .footer_main__ .footer_sub .newslatter__ input::placeholder {
-    font-size: 13px;
+    font-size: 15px;
   }
   .footer__ .footer_main__ .footer_sub .newslatter__ button {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .spare_room_mobile {
