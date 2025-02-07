@@ -899,6 +899,23 @@ body {
     margin: 0;
   }
 }
+@media only screen and (min-width: 576px) {
+  .media_mobile {
+    display: none;
+  }
+  .mobileView_search_btn {
+    display: none;
+  }
+  .mobile_view_bottom_bar {
+    display: none;
+  }
+  .offcanvas_icons__ {
+    display: none;
+  }
+  .blog_leftside__ p span {
+    display: none;
+  }
+}
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   html {
     overflow-x: hidden;
