@@ -3,14 +3,14 @@ $(document).ready(function () {
 
   owl.owlCarousel({
     loop: true, // Infinite loop
-    margin: 20, // Gap between slides
+    margin: 5, // Gap between slides
     nav: false, // Default navigation disable
     dots: true, // Dots enable karein
-    // autoplay: true, // Auto-slide disable
+    autoplay: true, // Auto-slide disable
     responsive: {
       0: { items: 2 },
       600: { items: 2 },
-      1000: { items: 3 },
+      992: { items: 3 },
     },
   });
 
