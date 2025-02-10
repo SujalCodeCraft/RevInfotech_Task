@@ -37,16 +37,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 $(document).ready(function () {
-  // Outer Slider
-  let outerOwl = $(".spare_room_carousel");
+  // ✅ Outer Slider (spare_mobile_slider)
+  let outerOwl = $(".spare_mobile_slider");
 
   outerOwl.owlCarousel({
     loop: true,
-    margin: 10,
-    nav: false,
-    dots: false, // Default dots disable, custom dots use karenge
-    // autoplay: true,
-    autoplayTimeout: 3000,
+    margin: 20,
+    nav: false, // ❌ Navigation hide
+    dots: true, // ✅ Custom dots enable
+    dotsEach: 1, // ✅ Each slide = 1 dot
+    autoplay: false, // ❌ Autoplay OFF
+    autoplayHoverPause: false, // ❌ Hover pe bhi stop nahi karega
     responsive: {
       0: { items: 2.2 },
       600: { items: 2 },
@@ -54,54 +55,33 @@ $(document).ready(function () {
     },
   });
 
-  // Outer Slider Custom Dots
-  $(".outer_slider_dots .outer_dot").click(function () {
-    let index = $(this).index();
-    outerOwl.trigger("to.owl.carousel", [index, 300]); // Move to slide
-    $(".outer_slider_dots .outer_dot").removeClass("active");
-    $(this).addClass("active");
-  });
-
-  // Sync Active Dot with OwlCarousel
-  outerOwl.on("changed.owl.carousel", function (event) {
-    let currentIndex =
-      event.item.index - event.relatedTarget._clones.length / 2;
-    if (currentIndex >= event.item.count) currentIndex = 0; // Loop Fix
-    $(".outer_slider_dots .outer_dot").removeClass("active");
-    $(".outer_slider_dots .outer_dot").eq(currentIndex).addClass("active");
-  });
-
-  // Inner Slider
-  $(".inner-carousel").each(function (index) {
+  // ✅ Inner Slider (spare_mobile_cards)
+  $(".spare_mobile_cards").each(function () {
     let innerOwl = $(this);
 
     innerOwl.owlCarousel({
       loop: true,
-      items: 1,
+      items: 1, // Ek time pe ek slide
       center: true,
-      nav: false, // Inner slider ke liye navigation off
-      dots: false, // Custom dots use karenge
-      // autoplay: true,
-      autoplayTimeout: 2000,
+      nav: true, // ✅ Custom navigation enable
+      dots: true, // ✅ Custom dots enable
+      autoplay: false, // ❌ Autoplay OFF
     });
 
-    // Inner Slider Custom Dots
-    let dotsContainer = $(this).siblings(".inner_slider_dots");
+    // **Previous Button Click**
+    $(this)
+      .closest(".spare_mobile_cards")
+      .find(".slide_inner_prev")
+      .click(function () {
+        innerOwl.trigger("prev.owl.carousel");
+      });
 
-    dotsContainer.find(".inner_dot").click(function () {
-      let innerIndex = $(this).index();
-      innerOwl.trigger("to.owl.carousel", [innerIndex, 300]); // Move to inner slide
-      dotsContainer.find(".inner_dot").removeClass("active");
-      $(this).addClass("active");
-    });
-
-    // Sync Inner Dots with OwlCarousel
-    innerOwl.on("changed.owl.carousel", function (event) {
-      let innerCurrentIndex =
-        event.item.index - event.relatedTarget._clones.length / 2;
-      if (innerCurrentIndex >= event.item.count) innerCurrentIndex = 0; // Loop Fix
-      dotsContainer.find(".inner_dot").removeClass("active");
-      dotsContainer.find(".inner_dot").eq(innerCurrentIndex).addClass("active");
-    });
+    // **Next Button Click**
+    $(this)
+      .closest(".spare_mobile_cards")
+      .find(".slide_inner_next")
+      .click(function () {
+        innerOwl.trigger("next.owl.carousel");
+      });
   });
 });
