@@ -1014,7 +1014,7 @@ body {
     }
   }
   .inner-item___ p {
-    font-size: 10px !important;
+    font-size: 9px !important;
   }
 }
 
@@ -1493,10 +1493,6 @@ body {
     padding: 0;
   }
   .blogs_section__ .blog_card___ .blog_leftside__ {
-    background-image: none;
-    background-color: white;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
     text-align: start;
   }
   .blogs_section__ .blog_card___ {
@@ -1516,9 +1512,6 @@ body {
     }
   }
   .blogs_section__ .blog_card___ .blog_leftside__ {
-    border: 1px solid black;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
     h4 {
       padding-right: 0;
       font-size: 2rem;
@@ -2633,25 +2626,35 @@ body {
     padding: 1rem;
     font-weight: 600;
     padding-bottom: 0;
+    font-size: 1.5rem;
   }
   .search__mobile {
     background-color: rgba(238, 42, 123, 1);
     color: rgba(255, 255, 255, 1);
-    padding: 0.3rem 1rem;
+    padding: 0.7rem 1rem;
     border-radius: 0.5rem;
     border: none;
     margin: 0 auto;
-    width: 100%;
+    width: 95%;
     margin-bottom: 1.5rem;
+    margin-left: 1rem;
   }
 }
 
 // Outer Slider Styling
 .spare_mobile_slider {
+  .owl-carousel {
+    position: relative;
+    z-index: 0;
+  }
   height: 36vh;
+  position: relative;
+  z-index: 0;
 
   .owl-item {
     height: 25vh;
+    position: relative;
+    z-index: 0;
   }
   .owl-nav {
     position: absolute;
@@ -2659,7 +2662,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    top: 50%;
+    top: 45%;
     padding: 0 0.5rem;
     .owl-prev,
     .owl-next {
@@ -2690,7 +2693,7 @@ body {
     position: absolute;
     text-align: center;
     width: 100%;
-    bottom: 0.5rem;
+    bottom: 0.3rem;
   }
 
   .spare_mobile_cards {
@@ -2730,8 +2733,9 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 0.2rem;
-  padding-bottom: 2rem;
+  padding: 2px;
+  padding-top: 0.5rem;
+  padding-bottom: 1.7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2744,6 +2748,7 @@ body {
     align-items: center;
     gap: 5px;
     p {
+      font-size: 8px;
       img {
         max-width: 15px;
       }
@@ -2755,7 +2760,7 @@ body {
   }
   p {
     margin-bottom: 0;
-    font-size: 11px;
+    font-size: 8px;
     color: white;
     font-size: 400;
 
