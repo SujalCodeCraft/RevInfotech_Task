@@ -2,11 +2,11 @@ $(document).ready(function () {
   var owl = $(".spare_room_slider");
 
   owl.owlCarousel({
-    loop: true, // Infinite loop
-    margin: 5, // Gap between slides
-    nav: false, // Default navigation disable
-    dots: true, // Dots enable karein
-    autoplay: true, // Auto-slide disable
+    loop: true,
+    margin: 5,
+    nav: false,
+    dots: true,
+    autoplay: true,
     responsive: {
       0: { items: 2 },
       600: { items: 2 },
@@ -14,7 +14,6 @@ $(document).ready(function () {
     },
   });
 
-  // **Custom Navigation Buttons**
   $("#prevSlide").click(function () {
     owl.trigger("prev.owl.carousel");
   });
@@ -37,17 +36,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 $(document).ready(function () {
-  // ✅ Outer Slider (spare_mobile_slider)
   let outerOwl = $(".spare_mobile_slider");
 
   outerOwl.owlCarousel({
     loop: true,
     margin: 20,
-    nav: false, // ❌ Navigation hide
-    dots: true, // ✅ Custom dots enable
-    dotsEach: 1, // ✅ Each slide = 1 dot
-    autoplay: false, // ❌ Autoplay OFF
-    autoplayHoverPause: false, // ❌ Hover pe bhi stop nahi karega
+    nav: false,
+    dots: true,
+    dotsEach: 1,
+    autoplay: false,
+    autoplayHoverPause: false,
     responsive: {
       0: { items: 2.2 },
       600: { items: 2 },
@@ -55,20 +53,18 @@ $(document).ready(function () {
     },
   });
 
-  // ✅ Inner Slider (spare_mobile_cards)
   $(".spare_mobile_cards").each(function () {
     let innerOwl = $(this);
 
     innerOwl.owlCarousel({
       loop: true,
-      items: 1, // Ek time pe ek slide
+      items: 1,
       center: true,
-      nav: true, // ✅ Custom navigation enable
-      dots: true, // ✅ Custom dots enable
-      autoplay: false, // ❌ Autoplay OFF
+      nav: true,
+      dots: true,
+      autoplay: false,
     });
 
-    // **Previous Button Click**
     $(this)
       .closest(".spare_mobile_cards")
       .find(".slide_inner_prev")
@@ -76,7 +72,6 @@ $(document).ready(function () {
         innerOwl.trigger("prev.owl.carousel");
       });
 
-    // **Next Button Click**
     $(this)
       .closest(".spare_mobile_cards")
       .find(".slide_inner_next")
